@@ -29,5 +29,5 @@ THEN I am again presented with current and future conditions for that city <br>
 
 ## Screenshot
 
-![WeatherDashboardInAction] (./assets/images/WeatherDash)
+![WeatherDashboardInAction] (./assets/images/WeatherDash.png)
 
