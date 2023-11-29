@@ -25,9 +25,10 @@ THEN I am again presented with current and future conditions for that city <br>
 - JavaScript
 - jQuery
 - Bootstrap
-- OpenWeather API
+- OpenWeather API 
+![OpenWeather](./assets/images/OpenWeatherAPI.png)
 
 ## Screenshot
 
-![WeatherDashboardInAction] (./assets/images/WeatherDash.png)
+![WeatherDashboardInAction](./assets/images/WeatherDash.png)
 
