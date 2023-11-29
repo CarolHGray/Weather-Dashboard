@@ -52,7 +52,7 @@ let searchSubmitHandler = function(event) {
 let displayWeather = function(weatherData) {
 
    // format and display the values
-   $("#main-city-name").text(weatherData.name + " (" + dayjs(weatherData.dt * 1000).format("DD/MM/YYYY") + ") ").append(`<img src="https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png"></img>`);
+   $("#main-city-name").text(weatherData.name + " (" + dayjs(weatherData.dt * 1000).format("MM/DD/YYYY") + ") ").append(`<img src="https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png"></img>`);
    $("#main-city-temp").text("Temperature: " + weatherData.main.temp.toFixed(1) + "°F");
    $("#main-city-humid").text("Humidity: " + weatherData.main.humidity + "%");
    $("#main-city-wind").text("Wind Speed: " + weatherData.wind.speed.toFixed(1) + " mph");
@@ -96,7 +96,7 @@ let displayWeather = function(weatherData) {
                         let fiveDayCard =`
                         <div class="col-md-2 m-2 py-3 card text-white bg-primary">
                             <div class="card-body p-1">
-                                <h5 class="card-title">` + dayjs(data.list[i].dt * 1000).format("DD/MM/YYYY") + `</h5>
+                                <h5 class="card-title">` + dayjs(data.list[i].dt * 1000).format("MM/DD/YYYY") + `</h5>
                                 <img src="https://openweathermap.org/img/wn/` + data.list[i].weather[0].icon + `.png" alt="rain">
                                 <p class="card-text">Temp: ` + data.list[i].main.temp + `</p>
                                 <p class="card-text">Humidity: ` + data.list[i].main.humidity + `</p>
