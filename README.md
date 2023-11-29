@@ -18,16 +18,17 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
 
-## Built with  :hammer:
+## Built :hammer: with
 
-HTML
-CSS (Bootstrap)
-JavaScript
-jQuery
-Bootstrap
-OpenWeather API
+- HTML
+- CSS (Bootstrap)
+- JavaScript
+- jQuery
+- Bootstrap
+- OpenWeather API
 
 ## Screenshot
 
-![WeatherDashboardInAction] 
+![WeatherDashboardInAction] (/.assets/images/Screenshot 2023-11-29 at 1.15.22 PM.png
+)
 
