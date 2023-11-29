@@ -23,7 +23,7 @@ THEN I am again presented with current and future conditions for that city <br>
 ![WeatherDashboardInAction](./assets/images/WeatherDash.png)
 
 ## Deploy the Website here!
-<a href="https://github.com/CarolHGray/Weather-Dashboard.git"> WeatherDashboard </a>
+<a href="https://carolhgray.github.io/Weather-Dashboard/"> WeatherDashboard </a>
 
 ## Built :hammer: with
 
