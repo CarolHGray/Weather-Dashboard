@@ -18,6 +18,12 @@ WHEN I click on a city in the search history <br>
 THEN I am again presented with current and future conditions for that city <br>
 
 
+## Screenshot
+
+![WeatherDashboardInAction](./assets/images/WeatherDash.png)
+
+
+
 ## Built :hammer: with
 
 - HTML
@@ -28,7 +34,4 @@ THEN I am again presented with current and future conditions for that city <br>
 - OpenWeather API 
 ![OpenWeather](./assets/images/OpenWeatherAPI.png)
 
-## Screenshot
-
-![WeatherDashboardInAction](./assets/images/WeatherDash.png)
 
