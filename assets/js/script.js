@@ -51,12 +51,7 @@ let searchSubmitHandler = function(event) {
 // function to display the information collected from openweathermap.org
 let displayWeather = function(weatherData) {
 
-    // format and display the values
-    $("#main-city-name").text(weatherData.name + " (" + dayjs(weatherData.dt * 1000).format("MM/DD/YYYY") + ") ").append(`<img src="https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png"></img>`);
-    $("#main-city-temp").text("Temperature: " + weatherData.main.temp.toFixed(1) + "°F");
-    $("#main-city-humid").text("Humidity: " + weatherData.main.humidity + "%");
-    $("#main-city-wind").text("Wind Speed: " + weatherData.wind.speed.toFixed(1) + " mph");
-
+   
     // use lat & lon to make the uv api call
     fetch("https://api.openweathermap.org/data/2.5/uvi?lat=" + weatherData.coord.lat + "&lon="+ weatherData.coord.lon + "&appid=ce39e7239416ad754359ca762d28521a")
         .then(function(response) {
@@ -132,7 +127,7 @@ let displayWeather = function(weatherData) {
         // save the lastCitySearched to local storage
         localStorage.setItem("lastCitySearched", JSON.stringify(lastCitySearched));
     
-        // display the searchHistory array
+        // display searchHistory array
         loadSearchHistory();
     };
     
