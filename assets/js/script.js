@@ -4,25 +4,24 @@ let lastCitySearched = ""
 
 // api call to openweathermap.org
 let getCityWeather = function(city) {
-    // format the OpenWeather api url
+    // Identify and use OpenWeather api url
     let apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=d9c69e2d3f132292ca6235be71af3335&units=imperial";
 
-    // make a request to the url
     fetch(apiUrl)
         
         .then(function(response) {
-        // request was successful
+        //  do this if request was successful
             if (response.ok) {
                 response.json().then(function(data) {
                     displayWeather(data);
                 });
-            // request fails
+            // do this if request fails
             } else {
                 alert("Error: " + response.statusText);
             }
         })  
 
-        // alert user if there is no responce from OpenWeather
+        // alert user if there is no response from OpenWeather
         .catch(function(error) {
             alert("Unable to connect to OpenWeather");
         })
